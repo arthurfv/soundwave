@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/2f28c7fc14.js"></script>
+    <link rel="stylesheet" href="css/stylecad.css">
+    <title>Document</title>
+</head>
+<body>
+      <!--Início do cabeçalho-->
+      <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="biblioteca.html">biblioteca</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="cadastro.html">registrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fim do cabeçalho-->
+
+    <!--Inicio do Cadastro-->
+
+
+    <div class="main">
+        <h1>Faça o seu cadastro</h1>
+        <form class="register">      
+        
+        <div class="full-box">
+        <label id="labelNome" for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="Informe seu nome completo" required>    
+        </div>
+
+        <div class="s-box spacing">
+        <label id="labelUsuario" for="email">Usuário</label>
+        <input type="email" name="email" id="email" placeholder="Informe seu e-mail" required>    
+        </div>
+
+        <div class="s-box">
+        <label id="labelData" for="date">Idade</label>
+        <input type="date" name="date" id="date" placeholder="" required>   
+        </div>
+
+        <div class="s-box spacing">
+        <label id="labelSenha" for="password">Senha</label>
+        <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+        <input type="password" name="password" id="password" placeholder="Crie uma senha" required>    
+        </div>
+
+        <div class="s-box">
+        <label id="labelConfirmar" for="password">Confirmar senha</label>
+        <i id="verConfirmar" class="fa fa-eye" aria-hidden="true"></i>
+        <input type="password" name="password" id="confirmation" placeholder="" required>    
+        </div>
+    
+        <!--<div class="full-box">
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement" id="agreement-label">Eu li e aceito os termos de uso</label>
+        </div>!-->
+    </form>
+    
+    <div class="btn">
+        <button onclick='cadastrar()'>Cadastrar</button>   
+    </div>        
+    </div>
+
+    <!--Fim do Cadastro-->
+
+<p class="error validation template"></p>    
+<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/*geral*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: rgb(0, 0, 129);
+    --black: #131313;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    outline:none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    color: rgb(32, 75, 238);
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+
+
+
+html {
+    font-size: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.header {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navbar li a {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-size: 1rem;
+    color: #ccc;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40px;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.navbar a:hover {
+    color: #fff;
+    padding: 5px;
+    transition: padding 0.2s ease-in;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus{
+    outline: none;
+}
+
+body{
+    padding-top: 5vh; /* view high 5% da tela*/
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg');
+    background-size: cover;
+    background-position-y: -115px;
+    background-attachment: fixed;
+}
+/*form*/
+.main{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--black);
+    border-radius: 10px;
+    padding: 25px;
+}
+/*h1 dentro da classe main*/
+.main h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.s-box{
+    flex: 1 1 45%;
+    position: relative;
+    
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bolder;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid rgb(32, 75, 238);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: var(--black);
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus{
+    border-color: rgb(32, 75, 238);
+}
+
+button{
+    background-color: rgb(32, 75, 238);
+    padding: 7px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(108, 138, 245);
+    color: black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+#agreement{
+    margin-right: 10px;
+}
+
+#agreement, #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 13px ;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(32, 75, 238);
+}
+

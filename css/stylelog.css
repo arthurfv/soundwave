@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(32, 75, 238)
+}
+
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/15/hand-1850120_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: black;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+a{
+    color: rgb(86, 120, 245);
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+}
+
+input{
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid rgb(32, 75, 238);
+    background-color: transparent;
+    outline: none;
+    min-width: none;
+    font-size: larger;
+}
+
+.label{
+    font-weight: bolder;
+    font-size: large;
+    position: relative;
+    padding-top: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label input:focus{
+     border-bottom: 2px solid rgb(32, 75, 238) ;
+}
+
+.label label{
+    color: rgb(32, 75, 238);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 2px;
+    transition: all .2s ease-out;
+}
+
+.label input:focus + label{
+    font-size: 15px;
+}
+
+button{
+    background-color: rgb(32, 75, 238);
+    padding: 10px;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+button:hover{
+    background-color: rgb(86, 120, 245);
+
+}
+
+.justify{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    padding: 15px;
+    font-size: large;
+    text-align: center;
+}
+
+.fa-eye{
+    position:absolute;
+    top: 13px;
+    right: 13px;
+    cursor: pointer;
+}
+
+#messageError{
+    text-align: center;
+    color: black;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+
+}
